@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LearnHub - Mini E-Learning Platform</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <nav class="navbar">
+                <a href="#" class="logo">LearnHub</a>
+                <div class="nav-links">
+                    <a href="#" class="active">Home</a>
+                    <a href="#">Courses</a>
+                    <a href="#">About</a>
+                    <a href="#">Contact</a>
+                </div>
+                <div class="auth-buttons">
+                    <button class="btn btn-outline" id="loginBtn">Login</button>
+                    <button class="btn btn-primary" id="signupBtn">Sign Up</button>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h1>Expand Your Knowledge with LearnHub</h1>
+            <p>Discover a wide range of courses designed to help you learn new skills and advance your career.</p>
+            <button class="btn btn-primary">Explore Courses</button>
+        </div>
+    </section>
+
+    <!-- Courses Section -->
+    <section class="container">
+        <h2 class="section-title">Featured Courses</h2>
+        <div class="courses-grid" id="coursesContainer">
+            <!-- Courses will be dynamically loaded here -->
+        </div>
+    </section>
+
+    <!-- Course Detail Section (Hidden by default) -->
+    <section class="container" id="courseDetailSection" style="display: none;">
+        <div class="course-detail" id="courseDetail">
+            <!-- Course details will be dynamically loaded here -->
+        </div>
+    </section>
+
+    <!-- Login Modal -->
+    <div class="modal" id="loginModal">
+        <div class="modal-content">
+            <span class="close-modal" id="closeLoginModal">&times;</span>
+            <div class="modal-header">
+                <h2 class="modal-title">Login to Your Account</h2>
+                <p>Enter your credentials to access your courses</p>
+            </div>
+            <form id="loginForm">
+                <div class="form-group">
+                    <label for="loginEmail">Email</label>
+                    <input type="email" id="loginEmail" class="form-control" placeholder="Enter your email" required>
+                </div>
+                <div class="form-group">
+                    <label for="loginPassword">Password</label>
+                    <input type="password" id="loginPassword" class="form-control" placeholder="Enter your password" required>
+                </div>
+                <button type="submit" class="btn btn-primary" style="width: 100%;">Login</button>
+            </form>
+            <div class="modal-footer">
+                <p>Don't have an account? <a href="#" id="switchToSignup">Sign Up</a></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Signup Modal -->
+    <div class="modal" id="signupModal">
+        <div class="modal-content">
+            <span class="close-modal" id="closeSignupModal">&times;</span>
+            <div class="modal-header">
+                <h2 class="modal-title">Create an Account</h2>
+                <p>Join LearnHub to start your learning journey</p>
+            </div>
+            <form id="signupForm">
+                <div class="form-group">
+                    <label for="signupName">Full Name</label>
+                    <input type="text" id="signupName" class="form-control" placeholder="Enter your full name" required>
+                </div>
+                <div class="form-group">
+                    <label for="signupEmail">Email</label>
+                    <input type="email" id="signupEmail" class="form-control" placeholder="Enter your email" required>
+                </div>
+                <div class="form-group">
+                    <label for="signupPassword">Password</label>
+                    <input type="password" id="signupPassword" class="form-control" placeholder="Create a password" required>
+                </div>
+                <button type="submit" class="btn btn-primary" style="width: 100%;">Sign Up</button>
+            </form>
+            <div class="modal-footer">
+                <p>Already have an account? <a href="#" id="switchToLogin">Login</a></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>LearnHub</h3>
+                    <p>Your gateway to knowledge and skill development. Learn at your own pace with our curated courses.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Courses</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact Us</h3>
+                    <ul>
+                        <li>Email: mwitiisaac14@gmail.com</li>
+                        <li>Phone: +254 712 345 678</li>
+                        <li>Address: Westlands, Nairobi, Kenya</li>
+                        <li>International: info@learnhub.com</li>
+                        <li>Phone (Intl): +1 (555) 123-4567</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2023 LearnHub. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
